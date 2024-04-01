@@ -115,5 +115,20 @@ var autoObj3 = {
 
 var t:Auto[] = [autoObj1,autoObj2,autoObj3];
 var eredmeny3 = MinHenUrtart(t);
-console.log(eredmeny3);
+
+
+function BenziesDB(autoTomb:Auto[]):number
+{
+    var db:number = 0;
+    for(var i:number = 0; i < autoTomb.length;i++)
+    {
+      if(autoTomb[i].benzines)
+       {
+        db++;
+       }
+    }
+    return db;
+}
+var eredmeny4 = BenziesDB(t);
+console.log(eredmeny4);
 
